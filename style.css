@@ -95,18 +95,9 @@ ul {
     font-family: 'Raleway', sans-serif;
     background-color: var(--dark_blue_intro);
     padding: 80px;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-}
-
-#header .logo {
-    display: inline-block;
-}
-
-#header .nav {
-   float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #header .nav li {
@@ -118,16 +109,12 @@ ul {
 #header .nav li a {
     text-decoration: none;
     line-height: 56px;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 #header .nav li a:hover {
     text-decoration: underline;
-    font-weight: bold;
-}
-
-#content {
-    margin-top: 176px;
+    font-weight: 700;
 }
 
 .intro-section {
@@ -211,10 +198,15 @@ ul {
     padding: 100px 160px 0px;
 }
 
+.comment-section .quote {
+    margin-bottom: -30px;
+    margin-left: -30px;
+}
+
 .comment-section .box {
     background-color: var(--dark_blue_testimonials);
     padding: 32px 24px 24px;
-    box-shadow: 0px 18px 18px var(--dark_blue_intro);
+    box-shadow: 5px 5px 5px var(--dark_blue_intro);
 }
 
 .person-profile {
@@ -237,7 +229,7 @@ ul {
    margin: 32px 280px 0px; 
    padding: 60px;
    background-color: var(--dark_blue_intro);
-   box-shadow: 0px 18px 18px #000;
+   box-shadow: 5px 5px 5px #000;
 }
 
 .register-section p {
@@ -274,6 +266,16 @@ ul {
     background-color: var(--cyan);
 }
 
+#warning {
+    color: rgb(198, 15, 15);
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 40px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
 .footer {
     background-color: var(--dark_blue_footer);
     padding: 200px 150px 80px;
@@ -287,21 +289,17 @@ ul {
 .footer .footer-content {
     margin-top: 32px;
     display: flex;
-
+    flex: 1;
+    justify-content: space-between;
 }
 
-.footer .row-footer {
-    margin-right: -40px;
-    margin-left: -40px;
-}
-
-.footer .col-footer {
+/* .footer .col-footer {
     padding: 0 40px;
-}
+} */
 
 .location-box {
     display: flex;
-    flex: 1;
+    width: 33%;
     align-items: baseline;
 }
 
@@ -334,14 +332,23 @@ ul {
 
 .footer .social-link {
     word-spacing: 10px;
+    color: var(--white);
 }
 
-#warning {
-    color: red;
-    margin-top: 20px;
-    text-align: left;
-    padding-left: 40px;
+.footer .social-link a {
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 8px;
 }
+
+.footer .social-link a:hover,
+.footer .social-link a:hover i {
+    color: var(--cyan);
+    border-color: var(--cyan);
+}
+
+
+
 
 
 
