@@ -186,12 +186,19 @@ ul {
 }
 
 .more-section .desc-more a {
+    text-decoration: none;
     font-size: 16px;
     color: var(--cyan);
+    border-bottom: 1px solid var(--cyan); 
 }
 
 .more-section .desc-more a:hover {
     color: var(--white);
+    border-bottom-color: var(--white);
+}
+
+.more-section .desc-more a:hover circle{
+    fill: white;
 }
 
 .comment-section {
@@ -249,8 +256,6 @@ ul {
     border-radius: 50px;
     color: #000;
 }
-
-
 
 .register-section .btn {
     font-weight: 700;
@@ -336,9 +341,13 @@ ul {
 }
 
 .footer .social-link a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
     border: 1px solid;
     border-radius: 100%;
-    padding: 8px;
 }
 
 .footer .social-link a:hover,
@@ -346,7 +355,6 @@ ul {
     color: var(--cyan);
     border-color: var(--cyan);
 }
-
 
 
 
